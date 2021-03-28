@@ -1,0 +1,6 @@
+
+
+gcc -c hello_rework.c -o hello_rework.o -D_FILE_OFFSET_BITS=64 -lfuse
+gcc cJSON.o hello_rework.o -o hello_rework -D_FILE_OFFSET_BITS=64 -lfuse
+./hello_rework -d root
+
